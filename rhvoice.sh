@@ -1,5 +1,5 @@
 #! /bin/bash
-# RHVoice-test -p aleksandr -dostatoxhno etoj stroki v nastroikah Foliate
+# RHVoice-test -p aleksandr  ***Достаточно этой строки в настройках Foliate.
 # anna, aleksandr, sit
 if [[ $FOLIATE_TTS_LANG_LOWER == 'ru' ]];
 then
