@@ -1,8 +1,9 @@
 #! /bin/bash
+# Офиц. гит RHVoice - https://github.com/RHVoice/RHVoice
 # https://launchpad.net/~linvinus/+archive/ubuntu/rhvoice - репозиторий RHVoice для 32 бит
 # http://mxl.mirror.root.lu/mx/repo/pool/main/f/foliate/ - пакеты Foliate от MX Linux и Antix
 # https://rhvoice.su/voices/ - Голоса для RHVoice
-# Информация по конфигам RHVoice для Linux, Windows, Android
+# https://github.com/RHVoice/RHVoice/blob/master/doc/ru/Configuration-file.md - Информация по конфигам RHVoice для Linux, Windows, Android
 # /usr/share/RHVoice/voices - Папка с языками
 # /etc/RHVoice/dicts/Russian/ - Папка для пользовательских словарей
 #
