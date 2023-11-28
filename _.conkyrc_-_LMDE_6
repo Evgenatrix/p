@@ -31,7 +31,7 @@ conky.config = {
   alignment = 'top_right',
 	gap_x = 20,
   --von oben |
-	gap_y = 10,
+	gap_y = 40,
   minimum_width = 350,
   minimum_height = 700,
   maximum_width = 400,
@@ -96,19 +96,25 @@ ${goto 90}|${goto 105}Место на диске ${color}
 ${goto 90}|${goto 120}${color3}Всего${alignr}${color6}${fs_size /}${color}
 ${goto 90}|${goto 120}${color3}Исп.${alignr}${color6}${fs_used /} ${color1}(${fs_used_perc}%)
 ${goto 90}|${goto 120}${color3}Своб.${alignr}${color6}${fs_free /}${color}
+${goto 90}|${goto 105} Домашняя папка ${color}
+${goto 90}|${goto 120}${color3}Всего${alignr}${color6}${fs_size /home/jest}${color}
+${goto 90}|${goto 120}${color3}Исп.${alignr}${color6}${fs_used /home/jest} ${color1}(${fs_used_perc /home/jest}%)
+${goto 90}|${goto 120}${color3}Своб.${alignr}${color6}${fs_free /home/jest}${color}
 #${goto 90}|${goto 38}${color1}Diskio ${color}
 #${goto 90}|${goto 120}${color3}Read${alignr}${color6}${diskio_read}${color}
 #${goto 90}|${goto 120}${color3}Write${alignr}${color6}${diskio_write}${color}
+${goto 90}|${goto 105} Сеть ${color}
+${goto 90}|${goto 120}${color3}Всего С/З:${alignr}${color6}${totaldown wlp5s0} / ${totalup wlp5s0}${color}
+${goto 90}|${goto 120}${color3}Скор. С/З:${alignr}${color6}${downspeed wlp5s0} / ${upspeed wlp5s0}${color}
+#${goto 90}|${goto 120}${color3}${upspeedgraph wlp5s0 80,160 -l}$alignr${downspeedgraph wlp5s0 80, 160 -l}${color}
 ${goto 90}|${goto 105}${color1}Процессы ${color}
 ${goto 90}|${goto 120}${color1}Все${alignr}${color6}${processes}${color}
 ${goto 90}|${goto 120}${color1}Запущ.${alignr}${color6}${goto 360}${running_processes}${color}
 ${goto 90}|${goto 105}${color1}Загрузка ЦП${color}
 ${goto 90}|${goto 120}${color3}${top name 1}${alignr}${color6}${top cpu 1}${top mem 1}${color}
 ${goto 90}|${goto 120}${color3}${top name 2}${alignr}${color6}${top cpu 2}${top mem 2}${color}
-${goto 90}|${goto 120}${color3}${top name 3}${alignr}${color6}${top cpu 3}${top mem 3}${color}
 ${goto 90}|${goto 105}${color1}Загрузка памяти${color}
 ${goto 90}|${goto 120}${color3}${top_mem name 1}${alignr}${color6}${top_mem cpu 1}${top_mem mem 1}${color}
 ${goto 90}|${goto 120}${color3}${top_mem name 2}${alignr}${color6}${top_mem cpu 2}${top_mem mem 2}${color}
-${goto 90}|${goto 120}${color3}${top_mem name 3}${alignr}${color6}${top_mem cpu 3}${top_mem mem 3}${color}
 ${goto 85}+----------------------------------------------+
 ]];
