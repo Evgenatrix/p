@@ -82,7 +82,7 @@ ${goto 90}|${goto 120}${color3}Время работы:${alignr}${color6}${uptim
 ${goto 90}|${goto 105}${color1}ЦП ${color}
 ${goto 90}|${goto 120}${color3}Загрузка.${alignr}${color1}${cpu cpu0}% ${color6}- ${freq_g}GHz${color}
 ${goto 90}|${goto 120}${color3}Сред. загр.${alignr}${color6}${loadavg}${color}
-${goto 90}|${goto 120}${color3}Темп.${alignr}${color1}${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}${color}
+${goto 90}|${goto 120}${color3}Темп. CPU${alignr}${color1}${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}${color}
 ${goto 90}|${goto 105}${color1}ОЗУ${color}
 ${goto 90}|${goto 120}${color3}Всего${alignr}${color6}${memmax}${color}
 ${goto 90}|${goto 120}${color3}Исп.${alignr}${color6}${mem} ${color1}(${memperc}%)${color}
@@ -96,6 +96,7 @@ ${goto 90}|${goto 105}Место на диске ${color}
 ${goto 90}|${goto 120}${color3}Всего${alignr}${color6}${fs_size /}${color}
 ${goto 90}|${goto 120}${color3}Исп.${alignr}${color6}${fs_used /} ${color1}(${fs_used_perc}%)
 ${goto 90}|${goto 120}${color3}Своб.${alignr}${color6}${fs_free /}${color}
+${goto 90}|${goto 120}${color3}Темп. SSD${alignr}${color1}${execi 10 sensors | grep 'temp1' | awk {'print $2'}}${color}
 ${goto 90}|${goto 105} Домашняя папка ${color}
 ${goto 90}|${goto 120}${color3}Всего${alignr}${color6}${fs_size /home/jest}${color}
 ${goto 90}|${goto 120}${color3}Исп.${alignr}${color6}${fs_used /home/jest} ${color1}(${fs_used_perc /home/jest}%)
@@ -104,8 +105,8 @@ ${goto 90}|${goto 120}${color3}Своб.${alignr}${color6}${fs_free /home/jest}$
 #${goto 90}|${goto 120}${color3}Read${alignr}${color6}${diskio_read}${color}
 #${goto 90}|${goto 120}${color3}Write${alignr}${color6}${diskio_write}${color}
 ${goto 90}|${goto 105} Сеть ${color}
-${goto 90}|${goto 120}${color3}Всего З/В:${alignr}${color6}${totaldown wlp5s0} / ${totalup wlp5s0}${color}
-${goto 90}|${goto 120}${color3}Скор. З/В:${alignr}${color6}${downspeed wlp5s0} / ${upspeed wlp5s0}${color}
+${goto 90}|${goto 120}${color3}Всего D/U:${alignr}${color6}${totaldown wlp5s0} / ${totalup wlp5s0}${color}
+${goto 90}|${goto 120}${color3}Скор. D/U:${alignr}${color6}${downspeed wlp5s0} / ${upspeed wlp5s0}${color}
 #${goto 90}|${goto 120}${color3}${upspeedgraph wlp5s0 80,160 -l}$alignr${downspeedgraph wlp5s0 80, 160 -l}${color}
 ${goto 90}|${goto 105}${color1}Процессы ${color}
 ${goto 90}|${goto 120}${color1}Все${alignr}${color6}${processes}${color}
