@@ -1,0 +1,16 @@
+sources.list (debian 12)
+-------------------------------------
+deb http://ftp.lt.debian.org/debian sid main
+deb http://debian.koyanet.lv/debian sid main
+-----------------------------------------
+sources.list.d - official-package-repositoriws.list
+--------------------------------------------
+deb https://ftp.linux.edu.lv/mirrors/packages.linuxmint.com faye main upstream >
+
+deb http://debian.koyanet.lv/debian bookworm main contrib non-free non-free-fir>
+deb http://debian.koyanet.lv/debian bookworm-updates main contrib non-free non->
+deb http://security.debian.org/ bookworm-security main contrib non-free non-fre>
+
+deb http://debian.koyanet.lv/debian bookworm-backports main contrib non-free no>
+
+
