@@ -11,7 +11,7 @@
 # anna, aleksandr, sit, mikhail, evgeniy-rus, artemiy и др.(имена голосов см. на rhvoice.su)
 if [[ $FOLIATE_TTS_LANG_LOWER == 'ru' ]];
 then
-  RHVoice-test -p aleksandr -r 100 <&0 &
+  RHVoice-test -p mikhail -r 100 <&0 &
 else
   RHVoice-test -p slt <&0 &
 fi
